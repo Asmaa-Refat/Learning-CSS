@@ -1,0 +1,76 @@
+/* 1 - 4 */
+/* التكليف 01 */
+
+/* Any Element With ClASS Title */
+.title {
+}
+
+/* Any Element With ID nav  */
+#nav {
+}
+
+/* Any Element With TAG-NAME div  */
+div {
+}
+
+/* Any Element With TAG-NAME h2 */
+h2 {
+}
+
+/* ******************************************************************************** */
+/* التكليف 05 */
+
+/* Valid */
+._user-name {
+}
+
+/* Valid */
+.-user-name {
+}
+
+/* Valid */
+.-user-name {
+}
+
+/* Not-Valid */
+.1user-name {
+}
+
+/* ? */
+.@user-name {
+}
+
+/* Valid */
+.user@name {
+}
+
+/* Valid */
+._user10name {
+}
+
+/* Valid */
+.u {
+}
+
+/* ******************************************************************************** */
+/* التكليف 06 */
+
+/* Bad */
+.USERNAME {
+}
+
+/* Bad */
+.UserName {
+}
+
+/* Good */
+.user-name {
+}
+
+/* Bad */
+.userName {
+}
+
+/* Bad */
+.usernameprofile {
+}
