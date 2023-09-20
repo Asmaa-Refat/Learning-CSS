@@ -1,0 +1,110 @@
+/* 05 - 08 */
+
+/* التكليف 01 */
+.one {
+    width: 500px;
+    margin: auto;
+    padding: 20px;
+    background-color: blueviolet;
+    background-color: #8a2be2;
+    background-color: rgb(138, 43, 226);
+    background-color: hsl(271, 76%, 53%);
+}
+
+.assign-1-shape-2 {
+    background-color: rgb(138, 43, 226, 0.5);
+}
+
+.assign-1-shape-3 {
+    background-color: rgb(138, 43, 226, 0.1);
+}
+
+/* ----------------------------------------------------------- */
+/* التكليف 02 */
+
+.two {
+    width: 400px;
+    height: 400px;
+    background-image: url("./blocks.png");
+    background-color:beige ;
+    margin: 10px;
+    color: white;
+}
+
+.assign-2-shape-1 {
+    background-repeat: no-repeat;
+}
+
+.assign-2-shape-2 {
+    background-repeat-x: no-repeat;
+}
+
+.assign-2-shape-3 {
+    background-repeat-y: no-repeat;
+}
+
+/* ----------------------------------------------------------- */
+/* التكليف 03 */
+
+.three {
+    width: 400px;
+    height: 400px;
+    background-image: url("./blocks.png");
+    background-color: azure;
+    border: 2px solid red;
+    margin: 30px;
+
+}
+
+.assign-3-shape-1 {
+    background-repeat: no-repeat;
+}
+
+.assign-3-shape-2 {
+    background-repeat-x: no-repeat;
+    background-position: 100% 100%;
+}
+
+.assign-3-shape-3 {
+    background-repeat-y: no-repeat;
+    background-position: bottom;
+
+}
+
+/* ----------------------------------------------------------- */
+/* التكليف 04 */
+
+
+
+.four {
+    width: 400px;
+    height: 400px;
+    background-image: url("./blocks.png");
+    background-color: yellow;
+    border: 2px solid brown;
+    margin: 30px;
+}
+
+.assign-4-shape-1 {
+    background-repeat: no-repeat;
+    background-size: 80% 80%;
+
+}
+
+.assign-4-shape-2 {
+    background-repeat-x: no-repeat;
+    background-position: right;
+    background-size: 80% 50%;
+
+}
+
+.assign-4-shape-3 {
+    background-repeat-y: no-repeat;
+    background-position: bottom;
+    background-size: 80% 80%;
+}
+
+.assign-4-shape-4 {
+    background-repeat: no-repeat;
+    background-position: bottom right;
+}
