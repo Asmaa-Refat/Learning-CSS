@@ -1,0 +1,49 @@
+/* 17 - 21 */
+/* التكليف 01 */
+* {
+    font-family: sans-serif;
+}
+
+.first {
+    text-shadow: 0.5px 0.5px #f44336, 1px 1px #2196f3, 1.5px 1.5px #9c27b0;
+}
+/* ------------------------------------------------------------------------------------- */
+/* التكليف 02 */
+.one {
+    text-transform: uppercase;
+}
+
+.two {
+    text-transform: capitalize;
+}
+
+.three {
+    text-transform: lowercase;
+}
+/* ------------------------------------------------------------------------------------- */
+/* التكليف 03 */
+.three-long {
+    width: 400px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    background-color: #eee;
+}
+/* ------------------------------------------------------------------------------------- */
+/* التكليف 04 */
+
+.link {
+    background-color: #009688;
+    color: white;
+    text-decoration: none;
+    border-bottom: 12px solid #00514a;
+    padding: 25px;
+    width: 200px;
+    text-align: center;
+    margin: auto;
+    text-transform: capitalize;
+    font-size: 40px;
+    font-weight: bold;
+    margin-top: 30px;
+    display: block;
+}
