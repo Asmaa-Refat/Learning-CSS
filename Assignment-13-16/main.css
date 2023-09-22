@@ -1,0 +1,33 @@
+/* التكليف 01 */
+.parent .child .title {
+    color: red;
+}
+
+.parent span {
+    color: blue;
+}
+
+.parent p, div.title{
+    color: green;
+}
+
+/* التكليف 02 */
+/* ---------------------------------------------------------------------------------------------------- */
+
+.two {
+    background-color: brown;
+    color: white;
+    padding: 14px;
+    margin: 10px;
+    max-width: 400px;
+}
+
+.two-first, .two-second, .two-third {
+    width: fit-content;
+}
+
+.two-fourth {
+    max-height: 20px;
+    overflow: hidden ;
+}
+
