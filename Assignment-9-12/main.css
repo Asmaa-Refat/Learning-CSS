@@ -1,0 +1,43 @@
+/* 09 - 12 */
+/* التكليف 01 */
+.one {
+    background-color: #eee;
+    padding: 20px;
+    margin: 15px;
+    display: inline-block;
+    border: 5px solid;
+    outline: 5px solid black;
+}
+
+.one-first {
+    border-color: red;
+}
+
+.one-second {
+    border-color: blue green;
+}
+
+.one-third {
+    border-style: dashed;
+    border-color: red green blue yellow;
+}
+
+/* --------------------------------------------------------------------------------- */
+/* التكليف 02 */
+
+.two {
+    width: 400px;
+    background-color: #eee;
+    margin: 10px;
+    padding: 10px;
+    outline: 7px solid #eee;
+    border-left: 5px solid #e91e63;
+}
+
+.two-second {
+    visibility: hidden;
+}
+
+.two-third {
+    border-color: #009688;
+}
