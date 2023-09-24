@@ -1,0 +1,45 @@
+/* 22 - 26 */
+/* التكليف 01 */
+.one {
+    border: 4px solid #ff5722;
+    padding: 20px;
+}
+
+.one p {
+    border: 4px solid;
+    border-color: inherit;
+    padding: inherit;
+}
+
+/* ------------------------------------------------------------------------- */
+/* التكليف 02 */
+.zero1 {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.zero2 {
+    font-family: 'Cairo', sans-serif;
+}
+
+.zero3 {
+    font-family: 'Jomhuria', cursive;
+}
+
+/* ------------------------------------------------------------------------- */
+/* التكليف 03 */
+
+html {
+    font-size: 20px;
+}
+
+.zero31 {
+    font-size: 2.5rem;
+}
+
+.zero32 {
+    font-size: 2rem;
+}
+
+.zero33 {
+    font-size: 1.5rem;
+}
