@@ -1,0 +1,68 @@
+/* 27 - 29 */
+/* التكليف 01 */
+body {
+    font-family: sans-serif;
+}
+
+.parent {
+    width: 1000px;
+    background-color: #eee;
+    font-weight: bold;
+}
+
+.parent div {
+    background-color: #ddd;
+    padding: 15px 0px;
+    text-align: center;
+    float: left;
+}
+
+.full-width {
+    width: calc(100% - (2 * 15px));
+    margin: 15px 0px 0px 15px;
+}
+
+.third {
+    width: calc((100% - (4 * 15px)) / 3);
+    margin: 15px 0px 0px 15px;
+}
+
+.half {
+    width: calc((100% - (3 * 15px)) / 2);
+    margin: 15px 0px 0px 15px;
+
+}
+
+.fourth {
+    width: calc((100% - (5 * 15px)) / 4);
+    margin: 15px 0px 15px 15px;
+}
+
+.clear {
+    clear: both;
+}
+/* ---------------------------------------------------------------------------- */
+/* التكليف 02 */
+
+div.all {
+    margin: 20px auto;
+    width: 300px;
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 20px;
+    color: black;
+}
+
+.normal {
+    background-color: #b3b3b3;
+
+}
+
+.one {
+    background-color: rgb(179, 179, 179, 0.1);
+}
+
+.two {
+    background-color: #b3b3b3;
+    opacity: 0.1;
+}
