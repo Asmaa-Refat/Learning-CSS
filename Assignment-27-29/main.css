@@ -30,7 +30,6 @@ body {
 .half {
     width: calc((100% - (3 * 15px)) / 2);
     margin: 15px 0px 0px 15px;
-
 }
 
 .fourth {
@@ -55,7 +54,6 @@ div.all {
 
 .normal {
     background-color: #b3b3b3;
-
 }
 
 .one {
