@@ -1,0 +1,187 @@
+/* 30 - 33 */
+/* التكليف 01 */
+body {
+    font-family: sans-serif;
+}
+
+div.first {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+}
+
+.green {
+    background-color: #009688;
+    z-index: 3;
+    top: 30px;
+    left: 30px;
+}
+
+.red {
+    background-color: #f44336;
+    z-index: 4;
+    top: 40px;
+    left: 40px;
+}
+
+.blue {
+    background-color: #01a9f4;
+    z-index: 2;
+    top: 20px;
+    left: 20px;
+}
+
+.black {
+    background-color: #333333;
+    z-index: 1;
+    top: 30px;
+    left: 20px;
+}
+
+/* --------------------------------------------------------------------------------------------------------------------- */
+/* التكليف 02 */
+
+.second {
+    width: 400px;
+    height: 128px;
+    background-color: #eee;
+    font-family: sans-serif;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+    line-height: 30px;
+    border: 2px solid;
+    border-color: #f44336 #2196f3;
+}
+
+.second span {
+    background-color: #2196f3;
+    color: white;
+    padding: 3px 13px;
+    position: relative;
+}
+
+.top-left {
+    top: -156px;
+    left: -162px;
+    border-right: 2px solid #f44336;
+}
+
+.bottom-left {
+    left: -200px;
+    bottom: -14px;
+    border-right: 2px solid #f44336;
+
+}
+
+.top-right {
+    right: -203px;
+    bottom: 155px;
+    border-left: 2px solid #f44336;
+
+}
+
+.bottom-right {
+    right: -163px;
+    bottom: -14px;
+    border-left: 2px solid #f44336;
+
+}
+
+/* --------------------------------------------------------------------------------------------------------------------- */
+/* التكليف 03 */
+
+.list-item-ul {
+    background-color: #eee;
+    margin: auto;
+    margin-bottom: 10px;
+    width: 400px;
+    padding: 10px;
+}
+
+.list-item-ul ol li {
+    background-color: white;
+    margin: 7px;
+    width: 320px;
+    padding: 10px;
+}
+
+.parent-ul {
+    list-style-type: none;
+}
+
+.second-list {
+    list-style: upper-roman;
+}
+
+.third-list {
+    list-style-position: inside;
+    padding-left: 0;
+}
+
+.third-list li {
+    background-color: white;
+    margin: 8px 1px;
+    width: 360px;
+    padding: 10px;
+}
+
+/* --------------------------------------------------------------------------------------------------------------------- */
+/* التكليف 04 */
+.image {
+    width :85%;
+    border-radius: 3%;
+}
+
+table {
+    border-bottom: 2px solid #009688;
+    width: 700px;
+    margin: auto;
+}
+
+table thead tr th {
+    background-color: #404040;
+    color: white;
+    padding: 20px;
+}
+
+table tbody tr td {
+    background-color: #eee;
+    padding: 15px 22px;
+}
+
+table button {
+    border: none;
+    padding: 5px 11px;
+    color: white;
+    font-weight: bold;
+}
+
+.view-button {
+    background-color: #01a9f4;
+}
+
+.delete-button {
+    background-color: #e91e63;
+}
+
+table td {
+    text-align: center;
+}
+
+table caption {
+    font-weight: bold;
+    margin: 20px;
+}
+
+.avatar {
+    width: 115px;
+}
+
+.control {
+    width: 195px;
+}
+
+.name {
+    width: 160px;
+}
