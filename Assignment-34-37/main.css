@@ -1,0 +1,114 @@
+/* 34-37 */
+/* التكليف 01 */
+body {
+    font-family: sans-serif;
+}
+
+.first {
+    width: 300px;
+    height: 60px;
+    text-align: center;
+    line-height: 58px;
+    margin: auto;
+}
+
+.one {
+    background-color: #eee;
+}
+
+.two {
+    background-color: red;
+    margin-top: 35px;
+}
+
+.three {
+    background-color: #eee;
+    margin-top: 35px;
+}
+/* --------------------------------------------------------------------------------------------- */
+/* التكليف 02 */
+
+.second {
+    position: relative;
+    background-color: #d4d4d4;
+    width: 400px;
+    padding: 30px 10px;
+    margin: auto;
+}
+
+
+.second::before {
+    content: "1";
+    background-color: red;
+    color: white;
+    position: absolute;
+    top: 12px;
+    left: -4%;
+    padding: 18px 13px;
+    font-weight: bold;
+}
+/* --------------------------------------------------------------------------------------------- */
+/* التكليف 03 */
+
+.third {
+    background-color: #eee;
+    width: 412px;
+    height: 13px;
+    padding: 17px 17px;
+    position: relative;
+    line-height: 14px;
+    margin: auto;
+    margin-bottom: 10px;
+    border-left: 4px solid #e91e63;
+}
+
+.third::before {
+    content: attr(data-person);
+    background-color: #dddddd;
+    padding: 8px;
+    position: absolute;
+    width: 55px;
+    height: 17px;
+    left: -99px;
+    top: 7px;
+    text-align: center;
+}
+
+.third::after {
+    content: "";
+    background-color: #e91e63;
+    width: 0px;
+    display: inline-block;
+    border-width: 9px;
+    border-style: solid;
+    background-color: transparent;
+    position: absolute;
+    border-color: transparent #e91e63 transparent transparent;
+    left: -22px;
+    top: 14px;
+}
+
+/* --------------------------------------------------------------------------------------------- */
+/* التكليف 04 */
+
+.fourth {
+    background-color: #eee;
+    position: relative;
+    width: 400px;
+    padding: 17px 17px;
+    margin: auto;
+    margin-bottom: 10px;
+    border-right: 5px solid #f44336;
+    counter-increment: AsmaaCounter;
+}
+
+.fourth::before {
+    content: counter(AsmaaCounter);
+    background-color: #f44336;
+    color: white;
+    font-weight: bold;
+    padding: 17px 21px;
+    position: absolute;
+    top: 0px;
+    left: -47px;
+}
