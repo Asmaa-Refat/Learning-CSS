@@ -1,0 +1,116 @@
+/* 38 - 41 */
+/* التكليف 01 */
+body {
+    font-family: sans-serif;
+}
+
+.first {
+    width: 100px;
+    height: 100px;
+    background-color: #eee;
+    margin: 10px;
+    display: inline-block;
+    border-radius: 50%;
+    border: 2px solid;
+    box-shadow: 5px 5px 0 #2196f3, -5px -5px 0 #e91e63;
+    counter-increment: AsmaaCount;
+    position: relative;
+}
+
+.first::before {
+    content: "Element";
+    position: absolute;
+    top: 39px;
+    left: 21px;
+}
+
+.first::after {
+    content: counter(AsmaaCount);
+    position: absolute;
+    left: 35px;
+    top: -14px;
+    background: black;
+    color: white;
+    border-radius: 50%;
+    width: 29px;
+    height: 29px;
+    text-align: center;
+    line-height: 29px;
+}
+
+/* ------------------------------------------------------------------------------------ */
+/* التكليف 02 */
+.second {
+    background-color: #eee;
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    box-shadow: inset 0px 3px 10px #494848, inset 1px -2px 8px #4f4e4e;
+    border-top-left-radius: 14px 32px;
+    border-bottom-left-radius: 46px 48px;
+    border-bottom-right-radius: 14px 28px;
+    border-top-right-radius: 44px 49px;
+}
+/* ------------------------------------------------------------------------------------ */
+/* التكليف 03 */
+
+.third {
+    width: 650px;
+    margin: auto;
+}
+
+.third .child1,
+.third .child2 {
+    display: inline-block;
+    background-color: #eee;
+    width: 261px;
+    height: 301px;
+    margin: 0 50px 0 0;
+    box-sizing: border-box;
+}
+
+.third .plan{
+    background-color: #01a9f4;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    width: 191px;
+    border-radius: 7px;
+    margin: 18px auto;
+}
+
+.third .child1::after{
+    content: '';
+    background-color: #01a9f4;
+    width: 1px;
+    height: 300px;
+    position: absolute;
+    bottom: 173px;
+    left: 488px;
+}
+
+.third .child2::before{
+    content: 'or';
+    background-color: #01a9f4;
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    bottom: 313px;
+    left: 475px;
+    border-radius: 50%;
+    color: white;
+    text-align: center;
+    line-height: 24px;
+}
+
+.third .price {
+    background-color: #ddd;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin: 24px auto;
+    text-align: center;
+    line-height: 199px;
+    font-size: 35px;
+}
