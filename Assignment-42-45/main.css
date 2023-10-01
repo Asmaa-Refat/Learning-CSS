@@ -1,0 +1,71 @@
+/* 42 - 45 */
+/* التكليف 01 */
+
+body {
+    font-family: sans-serif;
+}
+
+.parent {
+    background-color: #eee;
+    width: 450px;
+    height: 200px;
+    text-align: center;
+    padding: 20px;
+    margin: 90px auto;
+    transition-duration: 0.5s ;
+}
+
+.parent:hover {
+    margin-top: 20px;
+}
+
+.parent .child {
+    background-color: #ddd;
+    width: 350px;
+    padding: 28px;
+    margin: 20px;
+    transition-delay: 0.5s;
+    transition-duration: 0.5s ;
+
+}
+
+.parent .child:hover {
+    margin-top: 40px;
+}
+/* --------------------------------------------------------------------------------- */
+/* التكليف 02 */
+.second {
+    visibility: hidden;
+    position: relative;
+}
+
+.second::after {
+    content: "Elzero";
+    visibility: visible;
+    width: 400px;
+    display: inline-block;
+    color: black;
+    padding: 29px;
+    position:  absolute;
+    left: 34%;
+    font-size: 20px;
+    background-color: #eee;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* --------------------------------------------------------------------------------- */
+/* التكليف 03 */
+
+/* :root {
+    --mainColor: #009688;
+    --mainPadding: 10px;
+} */
+
+.third {
+    color: var(--mainColor, red);
+    border: 2px solid var(--mainColor, black);
+    width: 400px;
+    padding: 15px 12px;
+    margin: 16px;
+}
