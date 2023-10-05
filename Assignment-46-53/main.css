@@ -1,0 +1,262 @@
+/* التكليف 01 */
+body {
+    font-family: sans-serif;
+}
+
+.first {
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ff5722;
+    font-weight: bold;
+    border-radius: 50%;
+    background-color: #eee;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    box-shadow: 5px 0px 0px #ff5722, -5px 0px 0px #03a9f4;
+}
+
+/* ------------------------------------------------------------------ */
+/* التكليف 02 */
+.parent2 {
+    width: 600px;
+    height: 300px;
+    margin: auto;
+    background-color: #eee;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-between;
+    padding: 10px;
+}
+
+.parent2 div {
+    background-color: #f44336;
+    color: white;
+    width: 170px;
+    text-align: center;
+    padding: 10px;
+}
+/* ------------------------------------------------------------------ */
+/* التكليف 03 */
+
+.parent3 {
+    background-color: #eee;
+    width: 600px;
+    height: 300px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-between;
+    padding: 10px;
+}
+
+.parent3 div {
+    width: 170px;
+    background-color: #607d8b;
+    color: white;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.parent3 .one {
+    order: 6;
+    height: 20px;
+    align-self: end;
+}
+
+.parent3 .two {
+    order: 5;
+    height: 130px;
+}
+
+.parent3 .three {
+    order: 2;
+    height: 20px;
+
+}
+
+.parent3 .four {
+    order: 3;
+    height: 130px;
+}
+
+.parent3 .five {
+    order: 4;
+}
+
+/* ------------------------------------------------------------------ */
+/* التكليف 04 */
+
+.parent4 {
+    background-color: #eee;
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    height: 300px;
+    margin: auto;
+    padding: 10px;
+    justify-content: space-between;
+}
+
+.parent4 div {
+    background-color: #009688;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.parent4 .one {
+    align-self: end;
+    height: 50px;
+}
+
+.parent4 .two {
+    align-self: flex-start;
+    width: 310px;
+    height: 60px;
+}
+
+.parent4 .three {
+    align-self: end;
+    height: 50px;
+}
+
+/* ------------------------------------------------------------------ */
+/* التكليف 05 */
+.parent5 {
+    background-color: #eee;
+    display: flex;
+    width: 600px;
+    height: 300px;
+    margin: auto;
+    padding: 10px;
+    justify-content: space-between;
+}
+
+.parent5 div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    height: 150px;
+    width: 110px;
+}
+
+.parent5 .one {
+    background-color: #ff9800;
+    order: 2;
+}
+
+.parent5 .two {
+    background-color: #8bc34a;
+    order: 3;
+    align-self: flex-end;
+}
+
+.parent5 .three {
+    background-color: #795548;
+    order: 4;
+}
+
+.parent5 .four {
+    background-color: #673ab7;
+    align-self: flex-end ;
+}
+
+/* ------------------------------------------------------------------ */
+/* التكليف 06 */
+:root {
+    --grey: #ddd;
+    --lightGrey: #eee;
+}
+
+.page {
+    background-color: var(--lightGrey);
+    width: 80%;
+    height: 420px;
+    margin: auto;
+}
+
+.page .header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.page .header .logo {
+    background-color: var(--grey);
+    width: 80px;
+    height: 40px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.page .header .links {
+    background-color: var(--grey);
+    list-style-type: none;
+    display: inline-flex;
+    justify-content: end;
+    padding: 10px;
+    width: 86.5%;
+    height: 20px;
+    margin-top: 0px;
+}
+
+.page .header .links li {
+    padding-left: 10px;
+}
+
+.page .main-area {
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+}
+
+.page .main-area .content {
+    background-color: var(--grey);
+    width: 59%;
+    height: 280px;
+    padding: 10px;
+    margin-top: -25px;
+
+}
+
+.page .main-area .sidebar {
+    background-color: var(--grey);
+    width: 35%;
+    padding: 10px;
+    margin-top: -25px;
+}
+
+.page .footer {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+}
+
+.page .footer div {
+    padding: 10px;
+    margin-top: -10px ;
+}
+
+.page .copyright {
+    width: 700px;
+    background-color: var(--grey);
+}
+
+.page .design {
+    width: 200px;
+    background-color: var(--grey);
+}
