@@ -1,0 +1,46 @@
+/* التكليف 01 */
+body {
+    font-family: sans-serif;
+}
+
+.first {
+    width: 600px;
+    background-color: #eee;
+    margin: auto;
+    text-align: center;
+    height: 50px;
+    line-height: 48px;
+    letter-spacing: 5px;
+    border-width: 5px;
+    border-style: solid;
+    border-image: linear-gradient(to right, #f44336 20% , #2196f3 20%, #2196f3 40%, #4caf50 40%, #4caf50 60% , #e91e63 60%,  #e91e63 80%, #673ab7 80%, #673ab7 ) 1;
+}
+
+.first::first-letter {
+    font-size: 20px;
+    color: red;
+    width: 10px;
+}
+
+/* ---------------------------------------------------------------------------------- */
+/* التكليف 02 */
+
+.parent-input {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.parent-input input {
+    width: 600px;
+    margin: 10px;
+    background-color: #eee;
+    height: 40px;    
+    border: none;
+    border-bottom: 3px solid;
+    border-image: linear-gradient(to right, #f54437 50%, #009688 50%)1;
+    padding: 10px;
+    caret-color: #f54437;
+    outline: none;
+}
+
