@@ -1,0 +1,203 @@
+/* 57 - 64 */
+/* التكليف 01 */
+body {
+    font-family: sans-serif;
+}
+
+.grid1 {
+    background-color: #ddd;
+    padding: 20px;
+    width: 800px;
+    height: 400px;
+    margin: 30px auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 40px 1fr;
+    gap: 20px;
+}
+
+.grid1 div {
+    counter-increment: cnt;
+    background-color: #607d8b;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.grid1 div::before {
+    content: "Element " counter(cnt);
+}
+
+/* ------------------------------------------------ */
+/* التكليف 02 */
+
+.layout2 {
+    background-color: #ddd;
+    padding: 20px;
+    width: 900px;
+    height: 450px;
+    margin: 30px auto;
+    display: grid;
+    color: white;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: 45px 1fr 45px;
+    grid-template-areas: " head head head head head head head head head head "
+               "sec sec sec sec sec sec sec sec asi asi"
+               "foo foo foo foo foo foo foo foo foo foo ";
+}
+
+.layout2 header {
+    grid-area: head;
+    background-color: #03a9f4;
+    padding: 15px;
+}
+
+.layout2 header::before {
+    content: "Header";
+}
+
+.layout2 section {
+    grid-area: sec;
+    background-color: #ff5722;
+    padding: 15px;
+}
+
+.layout2 section::after {
+    content: "Section";
+}
+
+.layout2 aside {
+    grid-area: asi;
+    background-color: #607d8b;
+    padding: 15px;
+}
+
+.layout2 aside::before {
+    content: "Aside";
+}
+
+.layout2 footer {
+    grid-area: foo;
+    background-color: #009688;
+    padding: 15px;
+}
+
+.layout2 footer::after {
+    content: "Footer" ;
+}
+
+/* ------------------------------------------------ */
+/* التكليف 03 */
+
+.grid3 {
+    background-color: #ddd;
+    padding: 20px;
+    width: 800px;
+    height: 400px;
+    margin: auto;
+    grid-template-columns: auto 1fr 1fr auto;
+    grid-template-rows: 1fr auto;
+    display: grid;
+    gap: 20px;
+}
+
+.grid3 div {
+    background-color: #403f3f;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/* ------------------------------------------------ */
+/* التكليف 04 */
+
+.grid4 {
+    background-color: #ddd;
+    padding: 20px;
+    width: 800px;
+    height: 340px;
+    display: grid;
+    margin: auto;
+    grid-template-columns: repeat(10, auto);
+    grid-template-rows: repeat(6, 40px);
+    gap: 20px;
+}
+
+.grid4 div {
+    background-color: #2196f3;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.grid4 .one {
+    grid-column: 1 / span 10;
+    order: 8;
+}
+
+.grid4 .two {
+    grid-column: 1 / span 7;
+
+}
+
+.grid4 .three {
+    grid-column: 8 / span 3;
+
+}
+
+.grid4 .four {
+    grid-column: 1 / span 3;
+}
+
+.grid4 .five {
+    grid-row: 3 / span 3;
+    grid-column: 4 / span 7;
+}
+
+.grid4 .six {
+    grid-column: 1 / span 3;
+}
+
+.grid4 .seven {
+    grid-column: 1 / span 3;
+}
+
+.grid4 .eight {
+    grid-column: 1 / span 10;
+    order: -1;
+}
+
+
+/* ------------------------------------------------ */
+/* التكليف 05 */
+
+.grid5 {
+    background-color: #ddd;
+    padding: 20px;
+    width: 800px;
+    height: 400px;
+    display: grid;
+    margin: auto;
+    grid-template-columns: auto auto;
+    grid-template-rows: repeat(6, 20px);
+    gap: 357px 20px;
+}
+
+.grid5 div {
+    background-color: #e91e63;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 20px;
+}
