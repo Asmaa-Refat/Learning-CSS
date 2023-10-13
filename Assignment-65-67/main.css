@@ -1,0 +1,101 @@
+/* التكليف 01 */
+
+.first {
+    width: 300px;
+    height: 200px;
+    margin: 40px auto;
+    color: #03a9f4;
+    background-color: #eee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    font-size: 30px;
+}
+
+.first::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: #03a9f4;
+    position: absolute;
+    z-index: -1;
+    rotate: -5deg;
+}
+
+.first::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    rotate: 5deg;
+    background-color: #e91e63;
+    position: absolute;
+    z-index: -2;
+}
+
+/* ------------------------------------------------------ */
+/* التكليف 02 - 03 */
+.second {
+    width: 200px;
+    height: 200px;
+    background-color: #eee;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    position: relative;
+    font-size: 30px;
+}
+
+.second::after {
+    content: "";
+    width: 101%;
+    height: 100%;
+    border-radius: 50%;
+    border: 10px solid #e91e63;
+    border-left-color: white;
+    position: absolute;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+
+.second:hover::after {
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+}
+
+.second::before {
+    content: "";
+    width: 109%;
+    height: 109%;
+    border-radius: 50%;
+    border: 11px solid #03a9f4;
+    border-right-color: white;
+    position: absolute;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition-delay: 0.5s;
+}
+
+.second:hover::before {
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+}
+
