@@ -1,0 +1,174 @@
+:root {
+    --orangeColor: #ff5722;
+    --terquase: #009688;
+    --greyColor: #607d8b;
+    --blueColor: #1692fc;
+    --pinkColor: #ea2264;
+}
+
+.first {
+    background-color: var(--orangeColor);
+    color: white;
+    width: 150px;
+    margin: 70px auto;
+    position: relative;
+    text-align: center;
+    padding: 20px 0px;
+}
+.first::after,
+.first::before {
+    content: "";
+    background-color: inherit;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    position: absolute;
+}
+
+.first::before {
+    transform: skew(10deg, 10deg);
+    -webkit-transform: skew(10deg, 10deg);
+    -moz-transform: skew(10deg, 10deg);
+    -ms-transform: skew(10deg, 10deg);
+    -o-transform: skew(10deg, 10deg);
+}
+
+.first::after {
+    transform: skew(-10deg, -10deg);
+    -webkit-transform: skew(-10deg, -10deg);
+    -moz-transform: skew(-10deg, -10deg);
+    -ms-transform: skew(-10deg, -10deg);
+    -o-transform: skew(-10deg, -10deg);
+}
+
+/* ------------------------------------------------------------ */
+/* التكليف 02 */
+
+.second {
+    background-color: var(--terquase);
+    width: 111px;
+    margin: 30px  auto;
+    padding: 20px;
+    text-align: right;
+    color: white;
+    position: relative;
+}
+
+.second::after {
+    content: "";
+    position: absolute;
+    left: -15px;
+    top: 0px;
+    border-right: 6px solid white;
+    background-color: var(--terquase);
+    width: 20px;
+    height: 100%;
+    transform: skew(15deg, 0deg);
+}
+
+
+/* -- ------------------------------------------------------- -- */
+/* التكليف 03 */
+
+/* .class {
+    matrix: (3, 0.2679, 0, 3, 20, 100);
+    transfrom: scaleX(3) skewY(0.2679) skewX(0) scaleY(3) translateX(20) translateY(100)
+} */
+
+/* -- ------------------------------------------------------- -- */
+/* التكليف 04 */
+.fourth {
+    width: 200px;
+    height: 200px;
+    background-color: #607d8b;
+    margin: 100px auto;
+    border-bottom: 3px solid black;
+    position: relative;
+}
+
+.fourth::after {
+    content: "Elzero";
+    position: absolute;
+    color: white;
+    font-family: sans-serif;
+    bottom: 0px;
+    padding: 5px 9px;
+}
+
+.fourth::before {
+    content: "";
+    width: 138px;
+    height: 138px;
+    border-right: 3px solid white;
+    border-bottom: 3px solid white;
+    background-color: black;
+    position: absolute;
+    top: -70px;
+    left: 15%;
+    rotate: 45deg;
+    -webkit-transform: rotate(45 deg);
+    -moz-transform: rotate(45 deg);
+    -ms-transform: rotate(45 deg);
+    -o-transform: rotate(45 deg);
+}
+
+/* -- ------------------------------------------------------- -- */
+/* التكليف 05 */
+
+.fifth {
+    width: 200px;
+    height: 200px;
+    margin: 30px auto;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+
+.fifth:hover {
+    /*transform: rotateX(180deg);*/
+    transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+}
+
+.fifth::before,
+.fifth::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 35px;
+    color: white;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+}
+
+.fifth::before {
+    content: "Front";
+    background-color: var(--pinkColor);
+}
+
+.fifth::after {
+    content: "Back";
+    background-color: var(--blueColor);
+    /* transform: rotateX(180deg) */
+    transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+}
