@@ -1,0 +1,34 @@
+.first {
+    width: 50px;
+    height: 50px;
+    position: relative;
+    margin: 70px auto;
+    animation-duration: 1s;
+    border-radius: 50%;
+    border: 7px solid #eb1c6c;
+    border-left-color: transparent;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.first:hover {
+    animation-play-state: paused;
+}
+
+.first::before {
+    content: "";
+    position: absolute;
+    width: 150%;
+    top: -19px;
+    left: -19px;
+    height: 150%;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border: 7px solid #2399ff;
+    border-right-color: transparent;
+}
