@@ -3,14 +3,17 @@
     height: 50px;
     position: relative;
     margin: 70px auto;
-    animation-duration: 1s;
     border-radius: 50%;
-    border: 7px solid #eb1c6c;
+    border: 5px solid #eb1c6c;
     border-left-color: transparent;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
+    animation-name: spin;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
 }
 
 .first:hover {
@@ -20,15 +23,129 @@
 .first::before {
     content: "";
     position: absolute;
-    width: 150%;
-    top: -19px;
-    left: -19px;
-    height: 150%;
+    width: 64px;
+    height: 64px;
+    top: -12px;
+    left: -12px;
     border-radius: 50%;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
-    border: 7px solid #2399ff;
+    border: 5px solid #2399ff;
     border-right-color: transparent;
 }
+
+.first::after {
+    content: "";
+    position: absolute;
+    width: 78px;
+    height: 78px;
+    top: -19px;
+    left: -19px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border: 5px solid #fcb203;
+    border-bottom-color: transparent;
+}
+
+@keyframes spin {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* ------------------------------------------------------------------------------------ */
+/* التكليف 02  */
+
+.second {
+    width: 50px;
+    height: 50px;
+    position: relative;
+    margin: 70px auto;
+    border-radius: 50%;
+    border: 5px solid #2399ff;
+    border-bottom-color: transparent;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    animation-name: spin;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-play-state: paused;
+}
+
+.second::before {
+    content: "";
+    position: absolute;
+    width: 64px;
+    height: 64px;
+    top: -12px;
+    left: -12px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border: 5px solid #fcb203;
+    border-bottom-color: transparent;
+    animation-name: spin;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-play-state: paused;
+}
+
+.second::after {
+    content: "";
+    position: absolute;
+    width: 78px;
+    height: 78px;
+    top: -19px;
+    left: -19px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border: 5px solid black;
+    border-bottom-color: transparent;
+    animation-name: spin;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-play-state: paused;
+}
+
+.second:hover,
+.second:hover::after,
+.second:hover::before {
+    animation-play-state: running;
+}
+
+/* ------------------------------------------------------------------------------------ */
+/* التكليف 03  */
+
+.third {
+    width: 50px;
+    height: 50px;
+    margin: auto;
+    background-color: #eee;
+    border: 5px solid black;
+    border-bottom-color: transparent;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    display: block;
+    animation: spin 1s infinite linear reverse;
+}
+
+/* ------------------------------------------------------------------------------------ */
+/* التكليف 04  */
