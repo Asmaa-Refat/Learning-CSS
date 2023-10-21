@@ -29,3 +29,6 @@
     color: red; 
 }  */
 /* ------------------------------------- */
+div :not(:first-child, :last-child, h3) {
+    color: red;
+}
