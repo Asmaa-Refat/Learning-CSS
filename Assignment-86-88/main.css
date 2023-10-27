@@ -1,0 +1,75 @@
+/* my own framework classes */
+/* التكليف 01 */
+
+.center-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.center-position {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.circle-100 {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.circle-200 {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+/* -------------------------------------- */
+/* التكليف 02 */
+.second {
+    width: 500px;
+    background-color: #ddd;
+    margin: 60px auto;
+    padding: 20px 20px;
+    position: relative;
+}
+
+.arrow::before {
+    content: "";
+    position: absolute;
+    border: 20px solid transparent;
+}
+
+.top::before {
+    content: "";
+    border-color: transparent transparent  #ddd transparent;
+    position: absolute;
+    top: -40px;
+    left: 48%;
+}
+
+.right::before {
+    content: "";
+    border-color: transparent  transparent transparent #ddd;
+    position: absolute;
+    top: 9px;
+    left: 100%;
+}
+
+.bottom::before {
+    content: "";
+    border-color: #ddd  transparent transparent transparent;
+    position: absolute;
+    bottom: -39px;
+    left: 48%;
+}
+
+.left::before {
+    content: "";
+    border-color: transparent #ddd transparent transparent;
+    position: absolute;
+    top: 9px;
+    left: -7%;
+}
